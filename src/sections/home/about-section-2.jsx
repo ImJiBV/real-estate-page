@@ -38,7 +38,7 @@ export const AboutSection2 = () => {
 				className={`w-full sm:max-w-[50%] sm:absolute sm:-top-28 right-0 rounded-tl-[48px] bg-white shadow-2xl transition-all duration-1000 ease-in-out transform ${
 					isImageInView
 						? "opacity-100 translate-x-0"
-						: "opacity-0 -translate-x-5 sm:translate-x-10"
+						: "opacity-0 -translate-x-5 sm:-translate-x-10"
 				}`}
 			>
 				<img
