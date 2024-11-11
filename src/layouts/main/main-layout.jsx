@@ -21,7 +21,9 @@ export default function MainLayout() {
 	return (
 		<>
 			<Header open={open} openNav={openNav} closeNav={closeNav} />
-			<Outlet />
+			<div className="overflow-hidden">
+				<Outlet />
+			</div>
 			<Footer />
 		</>
 	);
