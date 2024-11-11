@@ -32,12 +32,13 @@ export const AboutSection2 = () => {
 	return (
 		<section className="relative w-full bg-white flex flex-col">
 			{/* Image Section */}
+
 			<figure
 				id="about-image-2"
 				className={`w-full sm:max-w-[50%] sm:absolute sm:-top-28 right-0 rounded-tl-[48px] bg-white shadow-2xl transition-all duration-1000 ease-in-out transform ${
 					isImageInView
 						? "opacity-100 translate-x-0"
-						: "opacity-0 translate-x-5 sm:translate-x-10"
+						: "opacity-0 -translate-x-5 sm:translate-x-10"
 				}`}
 			>
 				<img
@@ -58,12 +59,6 @@ export const AboutSection2 = () => {
 					<article className="w-full sm:max-w-[50%] p-12 sm:px-12 sm:py-20 md:py-40 lg:py-60">
 						<div
 							id="about-text-2"
-							/* className={`space-y-4 transition-all duration-1000 ease-in-out transform ${
-								isTextInView
-									? "opacity-100 translate-x-0"
-									: "opacity-0 translate-x-10 sm:translate-x-20"
-							}`} */
-
 							className={`space-y-4 transition-all duration-1000 ease-in-out transform ${
 								isTextInView
 									? "opacity-100 translate-y-0"
