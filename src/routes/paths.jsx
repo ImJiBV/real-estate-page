@@ -16,4 +16,7 @@ export const PATH_AUTH = {
 
 export const PATH_DASHBOARD = {
 	root: ROOTS_DASHBOARD,
+	management: {
+		houseList: path(ROOTS_DASHBOARD, "/house-list"),
+	},
 };

@@ -61,7 +61,7 @@ export const Header = ({ open, openNav, closeNav }) => {
 									</Link>
 								))}
 								<a
-									href="#"
+									href="/auth/login"
 									className="inline-flex items-center space-x-1 bg-amber-600 text-white p-2 px-6 rounded-tr-2xl hover:bg-amber-700"
 								>
 									<span>Work with us</span>
@@ -76,7 +76,7 @@ export const Header = ({ open, openNav, closeNav }) => {
 			{/* Side Nav */}
 
 			<aside
-				className={`z-[3] fixed h-full w-[320px] overflow-y-auto bg-white transition-transform duration-300 transform ${
+				className={`z-[3] fixed h-full w-80 overflow-y-auto bg-white transition-transform duration-300 transform ${
 					open ? "translate-x-0" : "-translate-x-full"
 				}`}
 			>

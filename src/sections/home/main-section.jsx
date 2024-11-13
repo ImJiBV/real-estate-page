@@ -1,12 +1,10 @@
 import { MoveRight } from "lucide-react";
-import { Wrapper } from "../../components/wrapper";
-
 export const MainSection = () => {
 	return (
 		<>
 			<section className="relative parallax-background bg-cover bg-center h-screen text-white flex flex-col font-cabin">
 				<div className="absolute inset-0 bg-black opacity-50"></div>
-				<Wrapper>
+				<div className="max-w-[80%] w-full m-auto p-6">
 					<h1 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-medium max-w-xl">
 						Beautiful homes made for you
 					</h1>
@@ -15,7 +13,7 @@ export const MainSection = () => {
 						facere possimus, omnis. Et quidem faciunt, ut labore et accurate
 						disserendum et harum quidem exercitus quid.
 					</p>
-				</Wrapper>
+				</div>
 
 				<div className="w-full">
 					<div className="relative max-w-[80%] w-full m-auto p-6 bg-white">

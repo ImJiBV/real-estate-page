@@ -1,4 +1,4 @@
-import { useLocation, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useState } from "react";
 
 import { Header } from "./header";

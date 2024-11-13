@@ -11,6 +11,7 @@ import axios from "../utils/axios";
 import localStorageAvailable from "../utils/localStorageAvailable";
 //
 import { GETSESSION, isValidToken, setSession, setUserSession } from "./utils";
+import { HOST_API_KEY } from "@/config-global";
 
 const initialState = {
 	isInitialized: false,
@@ -71,6 +72,7 @@ export function AuthProvider({ children }) {
 				const response = await axios.get(`/api/user/profile`, {
 					headers: {
 						authorization: GETSESSION(),
+						"x-api-key": HOST_API_KEY,
 					},
 				});
 
@@ -109,10 +111,14 @@ export function AuthProvider({ children }) {
 
 	// LOGIN
 	const login = useCallback(async (email, password) => {
-		const response = await axios.post("/api/auth/login", {
-			email,
-			password,
-		});
+		const response = await axios.post(
+			"/api/auth/login",
+			{
+				email,
+				password,
+			},
+			{ headers: { "x-api-key": HOST_API_KEY } }
+		);
 
 		const { access_token, user } = response.data;
 

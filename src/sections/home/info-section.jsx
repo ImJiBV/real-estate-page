@@ -1,5 +1,4 @@
-import { Bath, Car, Hash, MoveRight } from "lucide-react";
-import { Wrapper } from "../../components/wrapper";
+import { Bath, Car, Hash } from "lucide-react";
 import {
 	Carousel,
 	CarouselContent,
